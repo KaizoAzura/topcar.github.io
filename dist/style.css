@@ -1,0 +1,162 @@
+/* heading font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* non heading font */
+body,
+p,
+a,
+span,
+div,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  color: #e53a42;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+.nav-icon {
+  color: #333333;
+  margin-left: 0.75rem;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #333333;
+  width: 20%;
+  font-weight: 500;
+}
+
+/* end navbar */
+
+/* hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    ),
+    url(/img/bg-hero.png);
+  width: 100%;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 100px 75%;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.title span {
+  color: #e53a42;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  width: 75%;
+}
+
+.count {
+  font-weight: 700;
+  color: #4e3534;
+  font-size: 1.4rem;
+}
+
+.count .small {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #515151;
+}
+/* end hero section */
+
+/* responsive */
+
+@media screen and (min-width: 576px) {
+  /* hero section */
+
+  .hero {
+    background-position: 400px 75%;
+    background-size: 750px;
+  }
+}
+
+/* tablet and up */
+@media screen and (min-width: 768px) {
+  .nav-link {
+    font-size: 0.9rem;
+    margin: 0 0.35rem;
+  }
+
+  .nav-link.active {
+    width: 90%;
+  }
+
+  /* hero section */
+}
+
+/* laptop and up */
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .nav-link {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-link.active {
+    width: 75%;
+  }
+
+  /* hero section */
+
+  .hero {
+    justify-content: start;
+    padding: 1rem 3rem;
+    background-size: 1000px;
+    background-position: 600px 75%;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOPCAR - Dashboard Admin</title>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <!-- end link CSS -->
+
+    <!-- link icon -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- end link icon -->
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end link font -->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="#">TOPCAR</a>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="NavbarOffcanvas"
+          aria-labelledby="NavbarOffcanvasLabel"
+        >
+          <div class="offcanvas-header justify-content-between">
+            <h5 class="offcanvas-title navbar-brand" id="NavbarOffcanvasLabel">
+              TOPCAR
+            </h5>
+            <button
+              type="button"
+              class="btn nav-icon"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Homepage</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rent Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Buy Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="d-flex m-0 p-0">
+          <li class="nav-item navbar-nav">
+            <a href="#" class="nav-icon"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li class="nav-item navbar-nav">
+            <a href="#" class="nav-icon"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="nav-item navbar-nav d-md-none">
+            <a
+              href="#NavbarOffcanvas"
+              class="nav-icon"
+              data-bs-toggle="offcanvas"
+            >
+              <i class="fa-solid fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- hero section -->
+    <div class="container-fluid hero">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">
+            Buy, Sell & Rent <br /><span>reputable cars</span>
+          </h1>
+          <p class="text">
+            Buy and sell reputable cars. Renting car is easy and fast with
+            topcar
+          </p>
+          <div class="row">
+            <div class="col-5">
+              <h5 class="count">
+                50+
+                <p class="small">car brand</p>
+              </h5>
+            </div>
+            <div class="col-5">
+              <h5 class="count">
+                10K+
+                <p class="small">client</p>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- link js -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/script.js"></script>
+    <!-- end link js -->
+  </body>
+</html>
